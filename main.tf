@@ -20,5 +20,5 @@ module "im-workspace" {
  im_deployment_repo_uri = "github.com/karutselvan/im-auto-git"
  im_deployment_ref = "main"
  github_app_installation_id = "49531130"
- github_personal_access_token = "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"
+ github_personal_access_token = "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"
 }
