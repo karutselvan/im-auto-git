@@ -20,6 +20,5 @@ module "im-workspace" {
  im_deployment_repo_uri = "github.com/karutselvan/im-auto-git"
  im_deployment_ref = "main"
  github_app_installation_id = "49531130"
- github_pat_secret = "im-github-1880835467-im-auto-git"
- github_pat_secret_version = "6"
+ github_pat_secret = "im-auto-git"
 }
