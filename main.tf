@@ -1,5 +1,6 @@
 variable "project_id" {
   type = string
+  default = "karutselvan-dm-test"
 }
 
 resource "google_compute_network" "vpc_network" {
