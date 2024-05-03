@@ -3,7 +3,7 @@ variable "project_id" {
   default = "karutselvan-dm-test"
 }
 
-resource "google_compute_network" "vpc_network" {
+/*resource "google_compute_network" "vpc_network" {
   name    = "my-custom-mode-network"
   project = var.project_id
 }
@@ -22,4 +22,4 @@ module "im-workspace" {
  im_deployment_ref = "main"
  github_app_installation_id = "49531130"
  github_pat_secret = "im-git-access"
-}
+}*/
