@@ -1,25 +1,13 @@
 variable "project_id" {
   type = string
-  default = "karutselvan-dm-test"
+  default = "cloud-appcenter-e2e-testing"
 }
 
-/*resource "google_compute_network" "vpc_network" {
-  name    = "my-custom-mode-network"
-  project = var.project_id
+resource "google_storage_bucket" "imtestbucket" {
+ name          = "imtestbucket"
+ location      = "US"
+ storage_class = "STANDARD"
+ project       = var.project_id
+
+ uniform_bucket_level_access = true
 }
-
-output "vpc_id"{
-  value = google_compute_network.vpc_network.id
-}
-
-module "im-workspace" {
- source = "terraform-google-modules/bootstrap/google//modules/im_cloudbuild_workspace"
- version = "~> 7.0"
-
- project_id = "karutselvan-dm-test"
- deployment_id = "imgit"
- im_deployment_repo_uri = "github.com/karutselvan/im-auto-git"
- im_deployment_ref = "main"
- github_app_installation_id = "49531130"
- github_pat_secret = "im-git-access"
-}*/
